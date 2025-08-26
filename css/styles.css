@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Formatação do corpo de todas as páginas usando grid, definindo 3 linhas e 1 coluna */
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr 70px;
+    row-gap: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Formatação do cabeçalho, alinhando o menu ao centro */
+header {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    align-items: center;
+    background-color: #acd2c7;
+}
+
+nav {
+    width: 100%;
+}
+
+/* Formatação da lista do menu */
+ul:not(.habilidades) {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+li:not(.habilidades>li) {
+    padding: 10px;
+    background-color: #545454;
+    border-radius: 15px;
+}
+
+/* Definição de formatação quando o mouse é passado sobre o menu e o botão "enviar" do formulário */
+li:not(.habilidades>li):hover, input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #2e2e2e;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* Formatação do container de contéudo principal da página, alinhando-o ao centro e seus itens com espaço entre si */
+main {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #acd2c7;
+    justify-self: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Formatação dos títulos das seções */
+section > h2 {
+    margin-bottom: 8px;
+    background-color: #545454;
+    color: white;
+    width: fit-content;
+    margin-left: -20px;
+    padding: 10px 20px;
+}
+
+/* Formatação dos parágrafos das seções */
+section > p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.habilidades {
+    margin-left: 20px;
+}
+
+/* Formatação do rodapé */
+footer {
+    background-color: #acd2c7;
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formtação dos títulos da página de formação educacional e profissional */
+h2.titulo-formacao {
+    background-color: white;
+    color: black;
+    width: fit-content;
+    margin-left: -20px;
+    padding: 15px 20px;
+}
+
+/* Formtação dos parágrafos da página de formação educacional e profissional */
+p.formacao {
+    background-color: #545454;
+    color: white;
+    width: fit-content;
+    margin-left: -20px;
+    padding: 15px 20px;
+}
+
+/* Formatação do container de linguagens de programação */
+.container-linguagens {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.container-linguagens > div {
+    display: flex;
+    gap: 10px;
+}
+
+/* Formatação do formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+input, textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #545454;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+}
