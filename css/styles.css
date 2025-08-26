@@ -54,7 +54,7 @@ a {
     font-weight: 500;
 }
 
-/* Formatação do container de contéudo principal da página, alinhando-o ao centro e seus itens com espaço entre si */
+/* Formatação do container de conteúdo principal da página, alinhando-o ao centro e seus itens com espaço entre si */
 main {
     grid-area: 2 / 1 / 3 / 2;
     width: 70%;
@@ -156,4 +156,5 @@ input[type="submit"] {
     cursor: pointer;
     font-weight: 700;
     font-size: 1rem;
+
 }
